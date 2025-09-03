@@ -1615,3 +1615,139 @@ margin-top: 0.3rem;
         align-items: center;
     }
 }
+
+
+
+
+
+/* Responsive site */
+
+
+/* ========================= */
+/* 📱 RESPONSIVE ADJUSTMENTS */
+/* ========================= */
+
+/* Tablets and smaller (≤ 992px) */
+@media (max-width: 992px) {
+  /* Hero layout stacks */
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 0;
+  }
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .hero-visual {
+    position: relative;
+    margin: 0 auto;
+    top: auto;
+    transform: none;
+  }
+  .hero-visual-frame {
+    width: 280px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* About stacks */
+  .section.about > .container > .about-container:not(:first-of-type) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .about-visual {
+    margin-top: 1rem;
+    justify-self: center;
+  }
+
+  /* Projects stack */
+  .projects-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects-visual {
+    margin-top: 2rem;
+  }
+
+  /* Contact stacks */
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+/* Phones and smaller (≤ 600px) */
+@media (max-width: 600px) {
+  /* Hero text scales */
+  .hero-title { font-size: 2rem; }
+  .hero-subtitle { font-size: 1.1rem; }
+  .hero-description { font-size: 0.9rem; }
+
+  /* Hero buttons stack */
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  /* Social links center */
+  .social-links { justify-content: center; }
+
+  /* Hero image smaller */
+  .hero-visual-frame {
+    width: 220px;
+    height: auto;
+  }
+
+  /* Projects image smaller */
+  .projects-image { max-width: 250px; }
+
+  /* Achievements stack */
+  .achievements-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .achievement-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Experience timeline */
+  .timeline {
+    width: 90%;
+    padding-left: 10px;
+  }
+  .timeline::before {
+    left: 18px;
+  }
+  .timeline-item {
+    padding-left: 60px;
+  }
+  .timeline-icon {
+    width: 28px;
+    height: 28px;
+    left: 4px;
+    font-size: 12px;
+  }
+
+  /* Footer stack */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-links {
+    align-items: center;
+  }
+}
+
+/* Extra small screens (≤ 400px) */
+@media (max-width: 400px) {
+  .hero-title { font-size: 1.6rem; }
+  .hero-subtitle { font-size: 1rem; }
+  .hero-description { font-size: 0.85rem; }
+  .timeline-item { padding-left: 50px; }
+  .timeline-icon { left: 2px; }
+}
