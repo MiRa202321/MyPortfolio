@@ -1800,49 +1800,51 @@ margin-top: 0.3rem;
 
 /* ================== RESPONSIVE NAV + HERO FIXES ================== */
 
-/* Scale nav text with screen width */
-.nav-link {
-  font-size: clamp(0.85rem, 2vw, 1rem); /* min, preferred, max */
-}
+ /* Scale nav text with screen width */
+ .nav-link {
+   font-size: clamp(0.85rem, 2vw, 1rem); /* min, preferred, max */
+ }
 
-/* Tighter nav spacing for tablets */
-@media (max-width: 992px) {
-  .nav-links {
-    gap: 1rem;
-  }
-  .logo {
-    font-size: 1.4rem;
-  }
-}
+ /* Tighter nav spacing for tablets */
+ @media (max-width: 992px) {
+   .nav-links {
+     gap: 1rem;
+   }
+   .logo {
+     font-size: 1.4rem;
+   }
+ }
 
-/* Small screens: shrink nav text + hide hero image + center hero text */
-@media (max-width: 768px) {
-  .nav-links {
-    gap: 0.6rem;
-  }
-  .nav-link {
-    font-size: clamp(0.75rem, 2.5vw, 0.9rem);
-  }
-  .logo {
-    font-size: 1.2rem;
-  }
+ /* Small screens: shrink nav text + hide hero image + center hero text box */
+ @media (max-width: 768px) {
+   .nav-links {
+     gap: 0.6rem;
+   }
+   .nav-link {
+     font-size: clamp(0.75rem, 2.5vw, 0.9rem);
+   }
+   .logo {
+     font-size: 1.2rem;
+   }
 
-  /* Hide hero image */
-  .hero-visual {
-    display: none !important;
-  }
+   /* Hide hero image */
+   .hero-visual {
+     display: none !important;
+   }
 
-  /* Center hero text */
-  .hero-content {
-    max-width: 100% !important;
-    margin: 0 auto;
-    text-align: center;
-  }
+   /* Center hero text box */
+   .hero-content {
+     max-width: 90% !important;
+     margin: 0 auto;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
 
-  /* Center buttons + social links under text */
-  .hero-buttons,
-  .social-links {
-    justify-content: center;
-  }
-}
-
+   /* Center buttons + social links inside the box */
+   .hero-buttons,
+   .social-links {
+     justify-content: center;
+   }
+ }
